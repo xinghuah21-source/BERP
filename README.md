@@ -197,12 +197,9 @@ BERP/
 │   ├── connection.py          #   连接状态管理
 │   └── audio_buffer.py        #   音频缓冲处理
 │
-├── orchestrator/              # 服务编排
-│   ├── docker-compose.full.yml  # 完整服务编排
-│   └── nginx.conf             #   Nginx 反向代理配置
-│
-├── verify/                    # 测试与验证脚本
-└── thesis/                    # 毕业论文与附件
+└── orchestrator/              # 服务编排
+    ├── docker-compose.full.yml  # 完整服务编排
+    └── nginx.conf             #   Nginx 反向代理配置
 ```
 
 ---
