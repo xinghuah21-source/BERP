@@ -1,0 +1,92 @@
+{
+  "TC-EVAL-01": {
+    "transcript": "鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+    "breakdown": {
+      "accuracy": 100,
+      "pronunciation": 99,
+      "fluency": 58,
+      "semantic": 100
+    },
+    "total_score": 91,
+    "feedback": "内容基本正确，但朗读不够流畅，停顿和节奏还需要调整。"
+  },
+  "TC-EVAL-02": {
+    "breakdown": {
+      "accuracy": 91,
+      "pronunciation": 94,
+      "semantic": 100
+    },
+    "content": {
+      "coverage_ratio": 1.0,
+      "segment_hit_ratio": 1.0,
+      "segment_hits": 4.0,
+      "segment_total": 4.0
+    },
+    "error_head": {
+      "type": "mispronunciation",
+      "position": 14,
+      "expected": "望",
+      "actual": "忘"
+    }
+  },
+  "TC-EVAL-03": {
+    "breakdown": {
+      "accuracy": 0,
+      "pronunciation": 80,
+      "semantic": 50
+    },
+    "content": {
+      "coverage_ratio": 0.5,
+      "segment_hit_ratio": 0.5,
+      "segment_hits": 2.0,
+      "segment_total": 4.0
+    },
+    "error_head": {
+      "type": "omission",
+      "position": 12,
+      "expected": "举头望明月低头思故乡",
+      "actual": ""
+    }
+  },
+  "TC-EVAL-04": {
+    "breakdown": {
+      "accuracy": 89,
+      "pronunciation": 96,
+      "semantic": 100
+    },
+    "content": {
+      "coverage_ratio": 1.0,
+      "segment_hit_ratio": 1.0,
+      "segment_hits": 4.0,
+      "segment_total": 4.0
+    },
+    "error_head": {
+      "type": "insertion",
+      "position": 22,
+      "expected": "",
+      "actual": "红掌拨清波"
+    }
+  },
+  "TC-EVAL-05": {
+    "file": "yonge1.wav",
+    "transcript": "鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+    "breakdown": {
+      "accuracy": 100,
+      "pronunciation": 99,
+      "fluency": 58,
+      "semantic": 100
+    },
+    "feedback": "内容基本正确，但朗读不够流畅，停顿和节奏还需要调整。"
+  },
+  "TC-EVAL-06": {
+    "file": "yonge2.webm",
+    "transcript": "鹅，曲项向天歌，白毛浮绿水。红掌拨清波。",
+    "breakdown": {
+      "accuracy": 78,
+      "pronunciation": 95,
+      "fluency": 60,
+      "semantic": 93
+    },
+    "feedback": "注意不要漏读 '鹅鹅'。"
+  }
+}

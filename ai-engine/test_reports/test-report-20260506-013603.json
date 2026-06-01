@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-06 01:36:03",
+  "poem_title": "咏鹅",
+  "calibration_mode": "default",
+  "transcript": "鹅，曲项向天歌，白毛浮绿水。红掌拨清波。",
+  "reference": "鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+  "arousal": 0.35,
+  "valence": 0.5,
+  "top1_label": "NEUTRAL",
+  "top1_prob": 0.9998,
+  "target_arousal": 0.62,
+  "target_valence": 0.7,
+  "style_match": 74,
+  "target_center_distance": 0.336,
+  "normalized_distance": 0.611,
+  "within_tolerance": true,
+  "style_deviation_rating": "中等",
+  "accuracy": 78,
+  "pronunciation": 95,
+  "fluency": 93,
+  "semantic": 93,
+  "content_completeness": 93
+}

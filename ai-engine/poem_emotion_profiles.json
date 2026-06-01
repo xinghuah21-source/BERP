@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "poem_profiles": {
+    "咏鹅": {
+      "default": "童趣型",
+      "profiles": {
+        "童趣型": {
+          "target": { "arousal": 0.62, "valence": 0.7 },
+          "tolerance_radius": 0.55,
+          "tolerance": { "sigma_arousal": 0.2, "sigma_valence": 0.2 },
+          "bandwidth": {
+            "arousal_min": 0.4,
+            "arousal_max": 0.85,
+            "valence_min": 0.45,
+            "valence_max": 0.9
+          },
+          "tags": ["童趣", "明快", "活泼"]
+        }
+      }
+    },
+    "静夜思": {
+      "default": "内敛型",
+      "profiles": {
+        "内敛型": {
+          "target": { "arousal": 0.3, "valence": 0.25 },
+          "tolerance_radius": 0.4,
+          "tolerance": { "sigma_arousal": 0.1, "sigma_valence": 0.1 },
+          "bandwidth": {
+            "arousal_min": 0.15,
+            "arousal_max": 0.45,
+            "valence_min": 0.1,
+            "valence_max": 0.4
+          },
+          "tags": ["思乡", "内敛", "沉静"]
+        },
+        "清冷型": {
+          "target": { "arousal": 0.25, "valence": 0.35 },
+          "tolerance_radius": 0.4,
+          "tolerance": { "sigma_arousal": 0.08, "sigma_valence": 0.08 },
+          "bandwidth": {
+            "arousal_min": 0.17,
+            "arousal_max": 0.33,
+            "valence_min": 0.27,
+            "valence_max": 0.43
+          },
+          "tags": ["清冷", "孤寂", "淡远"]
+        }
+      }
+    },
+    "将进酒": {
+      "default": "豪迈型",
+      "profiles": {
+        "豪迈型": {
+          "target": { "arousal": 0.9, "valence": 0.7 },
+          "tolerance_radius": 0.4,
+          "tolerance": { "sigma_arousal": 0.12, "sigma_valence": 0.12 },
+          "bandwidth": {
+            "arousal_min": 0.75,
+            "arousal_max": 0.98,
+            "valence_min": 0.55,
+            "valence_max": 0.85
+          },
+          "tags": ["豪迈", "激昂", "奔放"]
+        }
+      }
+    }
+  }
+}

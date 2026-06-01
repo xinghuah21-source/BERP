@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-07 00:12:10",
+  "poem_title": null,
+  "calibration_mode": "default",
+  "transcript": "鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+  "reference": "",
+  "arousal": 0.75,
+  "valence": 0.8498,
+  "top1_label": "HAPPY",
+  "top1_prob": 0.9992,
+  "target_arousal": null,
+  "target_valence": null,
+  "style_match": 0,
+  "target_center_distance": 0.0,
+  "normalized_distance": 0.0,
+  "within_tolerance": false,
+  "style_deviation_rating": "未知",
+  "accuracy": 0,
+  "pronunciation": 73,
+  "fluency": 80,
+  "semantic": 100,
+  "content_completeness": 100
+}

@@ -1,0 +1,36 @@
+{
+  "standard": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "transcript": "床前明月光，疑是地上霜",
+  "alignment": {
+    "correct": 10,
+    "mispronunciation": 0,
+    "omission": 10,
+    "insertion": 0,
+    "ref_len": 20,
+    "hyp_len": 10
+  },
+  "content_features": {
+    "coverage_ratio": 0.5,
+    "segment_hit_ratio": 0.5,
+    "segment_hits": 2.0,
+    "segment_total": 4.0
+  },
+  "semantic_from_core": 50,
+  "score_text_only": {
+    "total_score": 72,
+    "breakdown": {
+      "accuracy": 67,
+      "pronunciation": 62,
+      "fluency": 100,
+      "semantic": 67
+    },
+    "error_details": [
+      {
+        "type": "omission",
+        "position": 12,
+        "expected": "举头望明月低头思故乡",
+        "actual": ""
+      }
+    ]
+  }
+}

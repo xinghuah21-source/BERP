@@ -1,0 +1,21 @@
+{
+  "target": {
+    "arousal": 0.3,
+    "valence": 0.25
+  },
+  "tolerance": {
+    "sigma_arousal": 0.1,
+    "sigma_valence": 0.1
+  },
+  "detected": {
+    "arousal": 0.85,
+    "valence": 0.75
+  },
+  "delta_standardized": {
+    "arousal": 5.5,
+    "valence": 5.0
+  },
+  "normalized_distance": 7.433,
+  "style_match_score": 0.0,
+  "style_match_score_int": 0
+}

@@ -1,0 +1,104 @@
+{
+  "request_seconds": 16.802,
+  "transcript": "鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+  "similarity": 1.0,
+  "breakdown": {
+    "accuracy": 100,
+    "pronunciation": 99,
+    "fluency": 89,
+    "semantic": 100
+  },
+  "total_score": 98,
+  "confidence": 0.98,
+  "emotion_scores": {
+    "arousal_score": 75,
+    "valence_score": 85,
+    "style_match": 90
+  },
+  "emotion_detected": {
+    "labels": [
+      "HAPPY",
+      "SURPRISED",
+      "SAD",
+      "NEUTRAL",
+      "ANGRY",
+      "FEARFUL",
+      "DISGUSTED",
+      "UNKNOWN",
+      "OTHER"
+    ],
+    "raw_labels": [
+      "开心/happy",
+      "吃惊/surprised",
+      "难过/sad",
+      "中立/neutral",
+      "生气/angry",
+      "恐惧/fearful",
+      "厌恶/disgusted",
+      "<unk>",
+      "其他/other"
+    ],
+    "probs": {
+      "ANGRY": 1.3238270639703842e-06,
+      "DISGUSTED": 9.78972707343928e-08,
+      "FEARFUL": 5.236065021563263e-07,
+      "HAPPY": 0.9992239475250244,
+      "NEUTRAL": 4.406064545037225e-05,
+      "OTHER": 2.8166409649088564e-08,
+      "SAD": 6.704979023197666e-05,
+      "SURPRISED": 0.0006628267001360655,
+      "UNKNOWN": 3.5517569330068e-08
+    },
+    "top1": {
+      "label": "HAPPY",
+      "raw_label": "开心/happy",
+      "prob": 0.9992239475250244
+    },
+    "av_raw": {
+      "arousal": 0.7499921147786093,
+      "valence": 0.8498368692178724
+    },
+    "confidence": {
+      "top1": 0.9992240537668637,
+      "entropy": 0.9969318925266899
+    },
+    "inference_seconds": 11.648,
+    "model": {
+      "provider": "funasr-subprocess",
+      "repo_id": "iic/emotion2vec_base_finetuned",
+      "path": "C:\\Users\\26947\\.cache\\modelscope\\hub\\models\\iic\\emotion2vec_base_finetuned",
+      "conda_python": "E:\\ANACONDA\\envs\\BERP\\python.exe"
+    }
+  },
+  "emotion_match": {
+    "calibration_mode": "default",
+    "style_match": 90,
+    "in_target_bandwidth": true,
+    "within_tolerance": true,
+    "distance_from_target": 0.198,
+    "target_center_distance": 0.198,
+    "tolerance_radius": 0.55,
+    "normalized_distance": 0.361,
+    "style_deviation_rating": "中等"
+  },
+  "intelligent_feedback": {
+    "overall_comment": "背诵准确，发音清晰，但流畅度稍欠，整体表现不错。",
+    "emotion_feedback": "愉悦度较高，但激活度略低，未能充分体现童趣和活泼的风格。",
+    "suggestions": [
+      "适当加快语速，增加节奏感，让背诵更明快。",
+      "在‘曲项向天歌’和‘红掌拨清波’处加强语调上扬，表现鹅的欢快。",
+      "想象画面，用更生动的语气朗读，增强感染力。"
+    ],
+    "poetic_insight": "学生基本理解了诗歌的欢快基调，但情感投入可更深，以展现鹅的活泼姿态。",
+    "master_comparison": "名家朗诵通常节奏更鲜明，语调起伏更大，可借鉴其抑扬顿挫的处理。",
+    "used_metrics": {
+      "accuracy": 100,
+      "fluency": 89,
+      "pronunciation": 99,
+      "semantic": 100,
+      "style_match": 90,
+      "stability": 0
+    }
+  },
+  "fallback_note": null
+}

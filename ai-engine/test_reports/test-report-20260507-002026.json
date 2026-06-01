@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-07 00:20:26",
+  "poem_title": null,
+  "calibration_mode": "default",
+  "transcript": "123",
+  "reference": "",
+  "arousal": 0.35,
+  "valence": 0.5,
+  "top1_label": "NEUTRAL",
+  "top1_prob": 1.0,
+  "target_arousal": null,
+  "target_valence": null,
+  "style_match": 0,
+  "target_center_distance": 0.0,
+  "normalized_distance": 0.0,
+  "within_tolerance": false,
+  "style_deviation_rating": "未知",
+  "accuracy": 0,
+  "pronunciation": 73,
+  "fluency": 93,
+  "semantic": 100,
+  "content_completeness": 100
+}

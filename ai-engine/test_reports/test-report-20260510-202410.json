@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-10 20:24:10",
+  "poem_title": "静夜思",
+  "calibration_mode": "baseline",
+  "transcript": "床前明月光，疑是地上霜。举头看明月，低头思故乡。",
+  "reference": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "arousal": 0.35,
+  "valence": 0.5,
+  "top1_label": "NEUTRAL",
+  "top1_prob": 1.0,
+  "target_arousal": 0.3,
+  "target_valence": 0.25,
+  "style_match": 77,
+  "target_center_distance": 0.32,
+  "normalized_distance": 0.0,
+  "within_tolerance": false,
+  "style_deviation_rating": "轻微",
+  "accuracy": 91,
+  "pronunciation": 94,
+  "fluency": 91,
+  "semantic": 100,
+  "content_completeness": 100
+}

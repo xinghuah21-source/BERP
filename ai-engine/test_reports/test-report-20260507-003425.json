@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-05-07 00:34:25",
+  "poem_title": "咏鹅",
+  "calibration_mode": "baseline",
+  "transcript": "，。，。",
+  "reference": "鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+  "arousal": 0.35,
+  "valence": 0.5,
+  "top1_label": "NEUTRAL",
+  "top1_prob": 1.0,
+  "target_arousal": 0.62,
+  "target_valence": 0.7,
+  "style_match": 84,
+  "target_center_distance": 0.233,
+  "normalized_distance": 0.0,
+  "within_tolerance": true,
+  "style_deviation_rating": "轻微",
+  "accuracy": 0,
+  "pronunciation": 66,
+  "fluency": 72,
+  "semantic": 0,
+  "content_completeness": 0
+}

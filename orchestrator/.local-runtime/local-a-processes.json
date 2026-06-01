@@ -1,0 +1,22 @@
+﻿[
+    {
+        "name":  "ai-engine",
+        "pid":  14892,
+        "log":  "E:\\game\\BERP\\orchestrator\\.local-runtime\\logs\\ai-engine.log"
+    },
+    {
+        "name":  "backend",
+        "pid":  11576,
+        "log":  "E:\\game\\BERP\\orchestrator\\.local-runtime\\logs\\backend.log"
+    },
+    {
+        "name":  "websocket",
+        "pid":  26872,
+        "log":  "E:\\game\\BERP\\orchestrator\\.local-runtime\\logs\\websocket.log"
+    },
+    {
+        "name":  "frontend",
+        "pid":  8656,
+        "log":  "E:\\game\\BERP\\orchestrator\\.local-runtime\\logs\\frontend.log"
+    }
+]

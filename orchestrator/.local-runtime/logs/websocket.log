@@ -1,0 +1,60 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20260513141254
+用户名: Chun\26947
+RunAs 用户: Chun\26947
+配置名称: 
+计算机: CHUN (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -NoExit -Command Set-Location 'E:\game\BERP\websocket-gateway'
+$env:PYTHONUTF8 = '1'
+Start-Transcript -Path 'E:\game\BERP\orchestrator\.local-runtime\logs\websocket.log' -Force | Out-Null
+try {
+ Invoke-Expression @'
+$env:PYTHONPATH='.'; & 'E:\game\BERP\.venv-local310\Scripts\python.exe' -m uvicorn main:app --host 0.0.0.0 --port 8002 --ws-max-size 50000000
+'@
+} finally {
+ Stop-Transcript | Out-Null
+}
+进程 ID: 26872
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55713) - "WebSocket /ws/test1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0MSIsImV
+4cCI6MTc3ODY1NzM4MX0.F6p7I-qWIBGZWqSZKiQO7DrltB7NsUMgPVzfceStiqw" [accepted]
+INFO:     connection open
+audio_chunk_received user_id=test1 seq=1 final=True t=1778655595.7351708
+audio_window user_id=test1 seq=1 final=True len=834642 prefix=data:audio/wav;base64,Uk
+ai_engine_ok user_id=test1 seq=1 ms=26988
+INFO:     connection closed
+INFO:     ('127.0.0.1', 59765) - "WebSocket /ws/test1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0MSIsImV
+4cCI6MTc3ODY1NzM4MX0.F6p7I-qWIBGZWqSZKiQO7DrltB7NsUMgPVzfceStiqw" [accepted]
+INFO:     connection open
+audio_chunk_received user_id=test1 seq=1 final=True t=1778655679.5371618
+audio_window user_id=test1 seq=1 final=True len=462590 prefix=data:audio/wav;base64,Uk
+ai_engine_ok user_id=test1 seq=1 ms=25372
+INFO:     connection closed
+INFO:     ('127.0.0.1', 64851) - "WebSocket /ws/test1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0MSIsImV
+4cCI6MTc3ODY1NzM4MX0.F6p7I-qWIBGZWqSZKiQO7DrltB7NsUMgPVzfceStiqw" [accepted]
+INFO:     connection open
+audio_chunk_received user_id=test1 seq=1 final=True t=1778655738.6255076
+audio_window user_id=test1 seq=1 final=True len=940454 prefix=data:audio/wav;base64,Uk
+ai_engine_ok user_id=test1 seq=1 ms=22967
+INFO:     connection closed
+INFO:     ('127.0.0.1', 59511) - "WebSocket /ws/test1?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0MSIsImV
+4cCI6MTc3ODY1NzM4MX0.F6p7I-qWIBGZWqSZKiQO7DrltB7NsUMgPVzfceStiqw" [accepted]
+INFO:     connection open
+audio_chunk_received user_id=test1 seq=1 final=True t=1778655784.0964162
+audio_window user_id=test1 seq=1 final=True len=273150 prefix=data:audio/wav;base64,Uk
+ai_engine_ok user_id=test1 seq=1 ms=25708
+INFO:     connection closed
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20260513160219
+**********************

@@ -1,0 +1,41 @@
+# Python virtual environments
+.venv-ai310/
+.venv-local310/
+venv/
+.env
+
+# HuggingFace models
+.hf_models/
+
+# Claude Code local settings
+.claude/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI model weights
+*.pt
+models/
+
+# Test media
+test_video/
+
+# Build artifacts
+*.zip
+ffmpeg/
