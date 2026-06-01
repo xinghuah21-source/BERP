@@ -22,56 +22,39 @@
 
 ## 系统架构
 
-```
-客户端 (React SPA)
-       │
-       ▼
-┌──────────────────────────────────────────────────┐
-│                   Nginx (:80)                     │
-│              反向代理 · 统一入口                    │
-└───────┬──────────┬──────────┬────────────────────┘
-        │ /api/*   │ /ai/*    │ /ws/*
-        ▼          ▼          ▼
-┌───────────┐ ┌──────────┐ ┌────────────────┐
-│  Backend  │ │AI Engine │ │WebSocket Gateway│
-│  :8000    │ │  :8001   │ │    :8002        │
-│ FastAPI   │ │ FastAPI  │ │  FastAPI + WS   │
-│ REST API  │ │ ML/LLM   │ │  Redis Pub/Sub  │
-└─────┬─────┘ └────┬─────┘ └───────┬────────┘
-      │            │               │
-      ▼            ▼               ▼
-┌──────────┐ ┌──────────┐  ┌──────────┐
-│PostgreSQL│ │  Redis   │  │DeepSeek  │
-│  :5432   │ │  :6379   │  │   API    │
-└──────────┘ └──────────┘  └──────────┘
+```mermaid
+graph TD
+    Client[客户端 React SPA]
+    Nginx[Nginx :80]
+
+    Backend[Backend :8000<br/>FastAPI REST API]
+    AIEngine[AI Engine :8001<br/>FastAPI ML / LLM]
+    WSGateway[WebSocket Gateway :8002<br/>FastAPI + Redis Pub/Sub]
+
+    PostgreSQL[(PostgreSQL :5432)]
+    Redis[(Redis :6379)]
+    DeepSeek[DeepSeek API]
+
+    Client --> Nginx
+    Nginx -- "/api/*" --> Backend
+    Nginx -- "/ai/*" --> AIEngine
+    Nginx -- "/ws/*" --> WSGateway
+    Backend --> PostgreSQL
+    Backend --> Redis
+    WSGateway --> Redis
+    AIEngine --> DeepSeek
 ```
 
 ### AI 评估流水线
 
-```
-学生音频 ──► FunASR (ASR) ──► 文本转录
-     │
-     └──────► emotion2vec ──► A/V 情感向量
-                  │                  │
-                  ▼                  ▼
-           ┌──────────────────────────────┐
-           │     多维评分引擎               │
-           │  · 准确度 (Accuracy)          │
-           │  · 发音 (Pronunciation)       │
-           │  · 流畅度 (Fluency)          │
-           │  · 语义 (Semantic)           │
-           │  · 情感风格匹配 (Style)       │
-           └──────────────┬───────────────┘
-                          │
-                          ▼
-           ┌──────────────────────────────┐
-           │   DeepSeek LLM 反馈生成       │
-           │  · 总体评价                   │
-           │  · 情感表达点评               │
-           │  · 改进建议                   │
-           │  · 诗意洞察                   │
-           │  · 与名家朗诵对比             │
-           └──────────────────────────────┘
+```mermaid
+flowchart LR
+    Audio[学生音频] --> ASR[FunASR<br/>语音识别]
+    Audio --> E2V[emotion2vec<br/>情感特征提取]
+    ASR --> Scoring[多维评分引擎<br/>准确度 · 发音 · 流畅度<br/>语义 · 情感风格匹配]
+    E2V --> Scoring
+    Scoring --> LLM[DeepSeek LLM<br/>教师反馈生成]
+    LLM --> Output[总体评价 · 改进建议<br/>诗意洞察 · 名家对比]
 ```
 
 ---
